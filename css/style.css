@@ -51,8 +51,8 @@ header {
 }
 
 .nav:hover {
-    color: #0065fc;
-    border-top: #0065FC solid;
+    color: var(--main-color);
+    border-top: var(--main-color) solid;
     padding-top: 6.5px;  
 }
 
