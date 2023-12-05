@@ -75,7 +75,7 @@ form {
 .fa-location-dot {
     color: black;
     background-color: var(--main-bg-color);
-    border-radius: 7.5px 0 0 7.5px;
+    border-radius: 15px 0 0 15px;
     padding: 22px;
 }
 
@@ -89,7 +89,7 @@ form {
 #search-button {
     background-color: var(--main-color);
     border: var(--main-color) solid;
-    border-radius: 0 7.5px 7.5px 0;
+    border-radius: 0 15px 15px 0;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -178,6 +178,7 @@ form {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
 /****** Hebergements ***********/
@@ -194,6 +195,8 @@ form {
 #hebergements-cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
     justify-content: space-between;
     gap: 4px;
 }
@@ -225,11 +228,19 @@ form {
     margin-bottom: 4px;
 }
 
+#hebergements-cards .card-subtitle {
+    margin: 8px 8px 8px 0;
+}
 
 #hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
 
+#show-more {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 8px 0 0;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -277,6 +288,16 @@ form {
     margin-bottom: 5px;
 }
 
+/****Activités dans la ville****/
+
+#activities {
+    display: flex;
+    justify-content: space-between;
+}
+
+#activities section {
+    padding: 30px;
+}
 
 
 
