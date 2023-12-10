@@ -104,7 +104,7 @@ form {
 #filter-bar {
     display: flex;
     gap: 15px;
-    margin: 30px 30px 15px 0;
+    margin-top: 35px;
 }
 
 #filter-text {
@@ -131,7 +131,7 @@ form {
     display: flex;
     gap: 10px;
     font-size: 16px;
-    margin: 30px 30px 15px 0;
+    margin-top: 35px;
 }
 
 .fa-info {
@@ -171,6 +171,8 @@ form {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -178,7 +180,6 @@ form {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    margin-bottom: 30px;
 }
 
 /****** Hebergements ***********/
@@ -198,18 +199,17 @@ form {
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-between;
-    gap: 4px;
 }
 
 #hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 #hebergements-cards img {
     width: 250.33px;
-    height: 136px;
+    height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -229,17 +229,19 @@ form {
 }
 
 #hebergements-cards .card-subtitle {
-    margin: 8px 8px 8px 0;
+    margin-top: 8px;
+    margin-bottom: 4px;
 }
 
 #hebergements-cards .card-rating {
-    margin-bottom: 5px;
+    margin-top: 4px;
+    padding-bottom: 15px;
 }
 
 #show-more {
     font-size: 18px;
     font-weight: 700;
-    margin: 20px 8px 0 0;
+    margin: 30px 30px 0 0;
 }
 
 /****** Populaires ***********/
@@ -252,7 +254,6 @@ form {
     justify-content: space-between;
     align-items: center;
 }
-
 
 .populaires-cards .card {
     display: flex;
@@ -293,10 +294,76 @@ form {
 #activities {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 #activities section {
     padding: 30px;
+}
+
+#activities-cards {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-content: space-between;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+#activities-cards .card {
+    padding: 0;
+}
+
+#activities-cards img {
+    width: 297px;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+#activities-cards .card-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 19px 0 19px;
+}
+
+
+/*******Pied-de-Page*******/
+
+#footer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: var(--main-bg-color);
+}
+
+.footer-section h3 {
+    display: flex;
+    margin: 0;
+    color: black;
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    width: 407px;
+    height: auto;
+    padding: 20px;
+}
+
+.footer-section-content p {
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: black;
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: 400;
+    word-wrap: break-word
 }
 
 
