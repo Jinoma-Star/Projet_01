@@ -64,7 +64,7 @@ header {
 }
 
 .find-hebergement-form {
-    padding : 5px 5px 5px 0;
+    padding-top: 5px;
 }
 
 form {
@@ -80,9 +80,12 @@ form {
 }
 
 :placeholder-shown {
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     font-size: 18px;
+}
+
+input::placeholder {
     color: black;
 }
 
@@ -113,6 +116,9 @@ form {
 }
 
 .filter-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     background-color: white;
     border: #d9d9d9 solid 2px;
     border-radius: 50px;
@@ -120,7 +126,6 @@ form {
     gap: 10px;
     font-size: 17px;
     font-weight: bold;
-    text-align: center;
 }
 
 .filter-button:hover {
@@ -197,7 +202,7 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: center;
     justify-content: space-between;
 }
 
@@ -235,7 +240,7 @@ form {
 
 #hebergements-cards .card-rating {
     margin-top: 4px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 #show-more {
@@ -292,32 +297,38 @@ form {
 /****Activités dans la ville****/
 
 #activities {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 35px;
 }
 
 #activities section {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
 }
 
 #activities-cards {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    align-content: flex-start;
-    align-content: space-between;
+    align-items: flex-start;
     gap: 30px;
     padding-top: 30px;
 }
 
 #activities-cards .card {
     padding: 0;
+    width: 298px;
+    height: 439px;
 }
 
 #activities-cards img {
     width: 297px;
     height: 380px;
     border-radius: 20px 20px 0 0;
+}
+
+#activities-cards .card-title {
+    font-weight: 700;
 }
 
 #activities-cards .card-content {
@@ -373,12 +384,9 @@ form {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
+    .hebergements-and-populaires {*
         width: 100%;
+        flex-direction: column;
     }
 
     .populaires {
@@ -403,9 +411,13 @@ form {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
 }
