@@ -432,10 +432,11 @@ input::placeholder {
     #activities-cards img {
         width: 194px;
         height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
