@@ -119,7 +119,14 @@ input::placeholder {
     font-weight: 700;
 }
 
+#filter-button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
 .filter-button {
+    height: 54px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -131,6 +138,7 @@ input::placeholder {
     font-size: 17px;
     font-weight: bold;
 }
+
 
 .filter-button:hover {
     background-color: var(--filter-bg-color);
@@ -316,30 +324,32 @@ input::placeholder {
     align-items: flex-start;
     gap: 30px;
     padding-top: 30px;
+    justify-content: center;
 }
 
 #activities-cards .card {
     padding: 0;
-    width: 298px;
-    height: 439px;
+    width: 297px;
+    height: 100%;
 }
 
 #activities-cards img {
-    width: 298px;
+    width: 297px;
     height: 380px;
     border-radius: 20px 20px 0 0;
 }
 
 #activities-cards .card-title {
     font-weight: 700;
+    margin: 0;
 }
 
 #activities-cards .card-content {
-    width: 100%;
-    height: auto;
     display: flex;
-    flex-direction: column;
-    padding: 0 19px 0 19px;
+    align-items: center;
+    width: 260px;
+    height: 19px;
+    padding: 20px 19px 20px 19px;
 }
 
 
@@ -388,6 +398,12 @@ input::placeholder {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    #filter-bar {
+        flex-direction: column;
+        margin: 0;
+    }
+
     .hebergements-and-populaires {
         width: 100%;
         flex-direction: column;
@@ -428,6 +444,12 @@ input::placeholder {
         width: 100%;
     }
 
+    #activities section {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
     #activities-cards {
         gap: 0;
         flex-wrap: wrap;
@@ -436,8 +458,12 @@ input::placeholder {
     
     #activities-cards .card {
         width: 194px;
-        height: 270px;
+        height: 100%;
         margin: 0;
+    }
+
+    #activities-cards .card-content {
+        width: 100%;
     }
 
     #activities-cards img {
@@ -460,9 +486,6 @@ input::placeholder {
         padding: 30px;
     }
 
-    .nav {
-
-    }
 
     .nav:hover {
         border-top: 0;
@@ -554,5 +577,4 @@ input::placeholder {
     .footer-section-content p {
         font-size: 14px;
     }
-}
 }
