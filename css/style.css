@@ -73,14 +73,17 @@ header {
 
 form {
     display: flex;
+    width: 377px;
+    height: 49px;
     margin: 15px 30px 15px 0;
 }
 
 .fa-location-dot {
+    font-size: large;
     color: black;
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
-    padding: 22px;
+    padding: 15.5px;
 }
 
 :placeholder-shown {
@@ -94,13 +97,16 @@ input::placeholder {
 }
 
 #search-button {
+    display: flex;
+    align-items: center;
     background-color: var(--main-color);
     border: var(--main-color) solid;
     border-radius: 0 15px 15px 0;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 17px; 
+    padding: 15px 16px 15px 16px;
+    
 }
 
 #form {
@@ -534,6 +540,10 @@ input::placeholder {
     .filter-button {
         font-size: 16px;
         padding: 8px 15px;
+    }
+
+    #filter-button-group {
+        flex-wrap: wrap;
     }
 
     #info-bar {
