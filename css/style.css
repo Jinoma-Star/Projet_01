@@ -136,6 +136,7 @@ input::placeholder {
 }
 
 #filter-text {
+    width: fit-content;
     font-size: 18px;
     font-weight: 700;
 }
@@ -428,6 +429,10 @@ input::placeholder {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    body {
+        max-width: 1024px;
+    }
+
     #filter-bar {
         flex-direction: column;
         margin: 0;
@@ -499,6 +504,10 @@ input::placeholder {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
 
+    body {
+        max-width: 100%;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
@@ -510,6 +519,11 @@ input::placeholder {
         padding: 30px;
     }
 
+    .main-container {
+        display: inline-flex;
+        padding: 0;
+        flex-direction: column;
+    }
 
     .nav:hover {
         border-top: 0;
@@ -520,17 +534,14 @@ input::placeholder {
         flex-direction: column-reverse;
     }
 
-    .main-container {
-        padding: 0 20px;
-    }
-
     #introduction {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding-bottom: 35px;
+        padding: 0 20px 35px 20px;
     }
 
+    
     nav {
     width: 375px;
     display: flex;
@@ -593,7 +604,11 @@ input::placeholder {
     }
 
     #filter-button-group {
-        flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 375px;
+    justify-content: space-evenly;
     }
 
     #info-bar {
@@ -639,6 +654,7 @@ input::placeholder {
     #footer {
         flex-direction: column;
         padding: 30px;
+        width: 315px;
     }
 
     .footer-section {
