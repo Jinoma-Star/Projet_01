@@ -537,6 +537,12 @@ input::placeholder {
         margin: 0;
     }
 
+    .nav:hover {
+        border-top: var(--main-color) 0;
+        padding-top: 0;
+    }
+
+
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
