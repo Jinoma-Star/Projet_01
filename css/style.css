@@ -505,7 +505,6 @@ input::placeholder {
     header {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 15px;
     }
 
     .logo {
@@ -524,9 +523,18 @@ input::placeholder {
         align-items: center;
     }
 
-    .nav:hover {
-        border-top: 0;
-        border-bottom: var(--main-color) solid; 
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: var(--main-bg-color) 2px solid;
+        padding-bottom: 15px;
+    }
+
+    .nav {
+        margin: 0;
     }
 
     .hebergements-and-populaires {
@@ -558,17 +566,6 @@ input::placeholder {
         padding: 0 20px 0 20px;
     }
 
-    
-    nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .nav {
-        margin: 0;
-    }
 
     .section-title {
         margin-bottom: 8px;
@@ -576,9 +573,9 @@ input::placeholder {
     }
 
     #text-subtitle {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 35px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 35px;
     }
 
     .find-hebergement-form {
@@ -602,7 +599,7 @@ input::placeholder {
     #search-logo-button,
     form {
         width: 100%;
-        align-items: center; /* Ajustez selon vos besoins */
+        align-items: center;
     }
 
     form {
@@ -629,7 +626,6 @@ input::placeholder {
     }
 
     #filter-button-group {
-        display: flex;
         flex-wrap: wrap;
         gap: 10px;
         max-width: 100%;
@@ -707,7 +703,7 @@ input::placeholder {
     }
 
     #activities-cards .card {
-        width: 335px;
+        width: 315px;
         height: auto;
     }
 
@@ -724,4 +720,42 @@ input::placeholder {
     .footer-section-content p {
         font-size: 14px;
     }
+}
+
+
+@media (max-width: 425px) {
+
+    #introduction {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #filter-button-group {
+        align-items: center;
+    }
+
+    .filter-button {
+        width: 48%; 
+        margin-bottom: 10px;
+    }
+
+    .filter-button p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    
+    .populaires-cards .card {
+    width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .populaires-cards .card {
+        width: 250px;
+    }
+
 }
