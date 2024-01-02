@@ -544,6 +544,24 @@ input::placeholder {
         padding-top: 0;
     }
 
+    nav a:hover {
+        position: relative; /* Permet de positionner le pseudo-élément */
+        display: block; /* Étend le lien pour remplir son conteneur */
+    }
+
+    nav a:hover::after {
+        content: ''; /* Nécessaire pour afficher un pseudo-élément */
+        position: absolute; /* Positionne par rapport au lien */
+        bottom: -17px; /* Positionne juste en dessous du lien, ajustez selon l'épaisseur de la bordure */
+        left: 50%; /* Commence au milieu du lien */
+        transform: translateX(-50%); /* Centre le pseudo-élément */
+        width: 50vw; /* Utilise vw pour la largeur en fonction de la largeur de l'écran */
+        height: 1px; /* Épaisseur du trait bleu */
+        background-color: var(--main-color); /* Utilisez votre variable de couleur bleue ou une valeur hexadécimale directe */
+        border-top: 2px solid var(--main-color); /* Ajoute un bord pour couvrir la bordure grise */
+        z-index: 10; /* S'assure que le trait bleu passe par-dessus la bordure grise */
+    }
+
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -563,10 +581,7 @@ input::placeholder {
         background-color: white;
     }
 
-    .hebergements-and-populaires .populaires-cards {
-        display: flex;
-        align-items: flex-start;
-    }
+
 
     #introduction {
         display: flex;
@@ -622,6 +637,8 @@ input::placeholder {
     }
 
     #filter-bar {
+        max-width: 425px;
+        width: 100%;
         flex-direction: column;
         gap: 0;
         height: auto;
@@ -662,7 +679,8 @@ input::placeholder {
 
 
     .populaires-cards {
-        flex-direction: column;
+        display: grid;
+        justify-content: center;
     }
 
     .populaires-cards .card {
