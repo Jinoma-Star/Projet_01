@@ -545,8 +545,8 @@ input::placeholder {
     }
 
     nav a:hover {
-        position: relative; /* Permet de positionner le pseudo-élément */
-        display: block; /* Étend le lien pour remplir son conteneur */
+        position: relative;
+        display: block; 
     }
 
     nav a:hover::after {
@@ -557,7 +557,7 @@ input::placeholder {
         transform: translateX(-50%); /* Centre le pseudo-élément */
         width: 50vw; /* Utilise vw pour la largeur en fonction de la largeur de l'écran */
         height: 1px; /* Épaisseur du trait bleu */
-        background-color: var(--main-color); /* Utilisez votre variable de couleur bleue ou une valeur hexadécimale directe */
+        background-color: var(--main-color); 
         border-top: 2px solid var(--main-color); /* Ajoute un bord pour couvrir la bordure grise */
         z-index: 10; /* S'assure que le trait bleu passe par-dessus la bordure grise */
     }
