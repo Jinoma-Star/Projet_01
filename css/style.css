@@ -479,12 +479,14 @@ input::placeholder {
     }
 
     #activities-cards {
-        flex-wrap: wrap; 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(194px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
     }
     
     #activities-cards .card {
-        width: 194px;
-        height: 100%;
+        width: 100%; /* Ajustement pour s'adapter à la grille */
         margin: 0;
     }
 
@@ -494,7 +496,7 @@ input::placeholder {
 
     #activities-cards img {
         width: 100%;
-        height: 200px;
+        height: 200px; /* Hauteur fixe pour maintenir la cohérence */
     }
 }
 
@@ -700,7 +702,7 @@ input::placeholder {
 
     #activities-cards {
         gap: 15px;
-        justify-content: center;
+        justify-items: center;
     }
 
     #activities-cards img {
@@ -748,13 +750,13 @@ input::placeholder {
     .filter-button p {
         font-size: 14px;
     }
-}
 
-@media (max-width: 425px) {
     #info-logo {
         width: 29px;
     }
+
 }
+
 
 @media (max-width: 375px) {
     
