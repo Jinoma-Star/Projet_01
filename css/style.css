@@ -793,4 +793,50 @@ input::placeholder {
         width: 250px;
     }
 
+    .hebergements-and-populaires section {
+        box-sizing: content-box;
+    }
+
+    #activities section {
+        box-sizing: content-box;
+    }
+
+    #form {
+        width: 180px;
+    }
+
+    #filter-bar {
+        max-width: 320px;
+        width: auto;
+    }
+
+    .filter-button {
+        justify-content: center;
+    }
+
+    #filter-button-group {
+        width: 290px;
+    }
+
+
+    .find-hebergement-form {
+        width: 300px;
+    }
+
+    #footer {
+        width: 260px;
+    }
+
+    .hebergements-and-populaires .populaires, .hebergements {
+        width: 270px;
+    }
+
+    #hebergements-cards .card,
+    #activities-cards .card {
+        width: 290px;
+    }
+
+    #activities section {
+        width: 260px;
+    }
 }
